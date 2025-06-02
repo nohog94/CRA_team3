@@ -7,5 +7,60 @@ public class CalTest {
     void testGetSum_positiveNumbers() {
         Cal calc = new Cal();
         assertEquals(5, calc.getSum(2, 3));
+    @Test
+    void getGop() {
+        int expected = 6;
+        Cal c = new Cal();
+
+        int res = c.getGop(2,3);
+
+        assertEquals(expected, res);-
+
+    Cal cal = new Cal();
+
+    @Test
+    void testDivideNormalCase() {
+        float result = cal.getDivide(10, 2);
+        assertEquals(5.0f, result);
+    }
+
+    @Test
+    void testDivideByZero() {
+        float result = cal.getDivide(10, 0);
+        assertEquals(0.0f, result);
+    }
+
+    @Test
+    void testNegativeDivision() {
+        float result = cal.getDivide(-10, 2);
+        assertEquals(-5.0f, result);
+    }
+
+    @Test
+    void testZeroNumerator() {
+        float result = cal.getDivide(0, 5);
+        assertEquals(0.0f, result);
+    }
+
+    @Test
+    void getSumSum() {
+        Cal calculator = new Cal();
+        int expected = 1+2+3;
+
+        int result = calculator.getSumSum(1,2,3);
+
+        assertEquals(expected, result);-
+    }
+
+
+    @Test
+    void minus() {
+        int result = 3;
+        int a = 5;
+        int b = 2;
+        Cal c = new Cal();
+
+        assertEquals(result, c.minus(a,b));
     }
 }
+
