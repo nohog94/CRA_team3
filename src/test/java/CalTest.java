@@ -29,4 +29,15 @@ public class CalTest {
         float result = cal.getDivide(0, 5);
         assertEquals(0.0f, result);
     }
+
+    @Test
+    void getSumSum() {
+        Cal calculator = new Cal();
+        int expected = 1+2+3;
+
+        int result = calculator.getSumSum(1,2,3);
+
+        assertEquals(expected, result);
+    }
 }
+
