@@ -2,7 +2,15 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CalTest {
+public class CalTest {-
+    @Test
+    void getGop() {
+        int expected = 6;
+        Cal c = new Cal();
+
+        int res = c.getGop(2,3);
+
+        assertEquals(expected, res);-
 
     Cal cal = new Cal();
 
@@ -37,7 +45,7 @@ public class CalTest {
 
         int result = calculator.getSumSum(1,2,3);
 
-        assertEquals(expected, result);
+        assertEquals(expected, result);-
     }
 }
 

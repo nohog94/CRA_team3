@@ -1,4 +1,7 @@
 public class Cal {
+    public int getGop(int a, int b) {
+        return a * b;
+      
     public float getDivide(int a, int b) {
         if (b == 0) {
             return 0;
