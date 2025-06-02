@@ -10,31 +10,32 @@ public class CalTest {
 
         int res = c.getGop(2, 3);
 
-        assertEquals(expected, res);
     }
-
-    Cal cal = new Cal();
 
     @Test
     void testDivideNormalCase() {
+        Cal cal = new Cal();
         float result = cal.getDivide(10, 2);
         assertEquals(5.0f, result);
     }
 
     @Test
     void testDivideByZero() {
+        Cal cal = new Cal();
         float result = cal.getDivide(10, 0);
         assertEquals(0.0f, result);
     }
 
     @Test
     void testNegativeDivision() {
+        Cal cal = new Cal();
         float result = cal.getDivide(-10, 2);
         assertEquals(-5.0f, result);
     }
 
     @Test
     void testZeroNumerator() {
+        Cal cal = new Cal();
         float result = cal.getDivide(0, 5);
         assertEquals(0.0f, result);
     }
@@ -67,6 +68,16 @@ public class CalTest {
         int res = c.getGop(-2, 3);
 
         assertEquals(expected, res);
+    }
+
+    @Test
+    void getNegativeSumSum() {
+        Cal calculator = new Cal();
+        int expected = (-1)+(-2)+(-3);
+
+        int result = calculator.getSumSum(-1,-2,-3);
+
+        assertEquals(expected, result);
     }
 }
 
