@@ -14,8 +14,6 @@ public class CalTest {
 
         int res = c.getGop(2, 3);
 
-        assertEquals(expected, res);
-
     }
 
     @Test
@@ -56,7 +54,6 @@ public class CalTest {
         assertEquals(expected, result);
     }
 
-
     @Test
     void minus() {
         int result = 3;
@@ -86,6 +83,16 @@ public class CalTest {
                 new int[]{0,-1,1}   // 세 번째 배열
         );
     }
+    @Test
+    void getGop2() {
+        int expected = -6;
+        Cal c = new Cal();
+
+        int res = c.getGop(-2, 3);
+
+        assertEquals(expected, res);
+    }
+
     @Test
     void getNegativeSumSum() {
         Cal calculator = new Cal();
