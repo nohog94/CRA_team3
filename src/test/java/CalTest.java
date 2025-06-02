@@ -14,6 +14,8 @@ public class CalTest {
 
         int res = c.getGop(2, 3);
 
+        assertEquals(expected, res);
+
     }
 
     @Test
@@ -54,6 +56,7 @@ public class CalTest {
         assertEquals(expected, result);
     }
 
+
     @Test
     void minus() {
         int result = 3;
@@ -91,6 +94,27 @@ public class CalTest {
         int res = c.getGop(-2, 3);
 
         assertEquals(expected, res);
+    }
+
+
+    @Test
+    void sum() {
+        int result = 7;
+        int a = 5;
+        int b = 2;
+        Cal c = new Cal();
+
+        assertEquals(result, c.getSum(a,b));
+    }
+
+    @Test
+    void sum2() {
+        int result = 12;
+        int a = 3;
+        int b = 9;
+        Cal c = new Cal();
+
+        assertEquals(result, c.getSum(a,b));
     }
 
     @Test
