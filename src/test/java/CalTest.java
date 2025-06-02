@@ -39,5 +39,15 @@ public class CalTest {
 
         assertEquals(expected, result);
     }
+
+    @Test
+    void getNegativeSumSum() {
+        Cal calculator = new Cal();
+        int expected = (-1)+(-2)+(-3);
+
+        int result = calculator.getSumSum(-1,-2,-3);
+
+        assertEquals(expected, result);
+    }
 }
 
