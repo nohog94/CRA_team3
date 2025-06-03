@@ -32,6 +32,20 @@ public class CalTest {
         assertEquals(0.0f, result);
     }
 
+     @Test
+    void getZegop() {
+        Cal app = new Cal();
+        int ret = app.getZegop(10);
+        assertEquals(100, ret);
+    }
+    
+    @Test
+    void getZegop2() {
+        Cal app = new Cal();
+        int ret = app.getZegop(8);
+        assertEquals(64, ret);
+    }
+
     @Test
     void testNegativeDivision() {
         Cal cal = new Cal();
