@@ -10,7 +10,7 @@ public class Cal {
         return a/b;
     }
 
-     public int getZerogop(int a){
+     public int getZegop(int a){
         return a * a;
     }
 
