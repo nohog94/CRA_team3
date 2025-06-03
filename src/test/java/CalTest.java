@@ -33,16 +33,16 @@ public class CalTest {
     }
 
      @Test
-    void getZerogop() {
+    void getZegop() {
         Cal app = new Cal();
-        int ret = app.getZerogop(10);
+        int ret = app.getZegop(10);
         assertEquals(100, ret);
     }
     
     @Test
-    void getZerogop2() {
+    void getZegop2() {
         Cal app = new Cal();
-        int ret = app.getZerogop(8);
+        int ret = app.getZegop(8);
         assertEquals(64, ret);
     }
 
